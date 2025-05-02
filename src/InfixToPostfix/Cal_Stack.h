@@ -19,6 +19,6 @@ int Pop(Nptr* Top);
 void FreeList(Nptr* Top);
 char Peek(Nptr Top);
 void PrintStack(Nptr Top);
-
+//new
 void InfixToPostfix(const char* s);
 int EvaluatePostfix(const char* postfix);
