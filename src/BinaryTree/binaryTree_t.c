@@ -16,7 +16,7 @@ int main() {
     setLeftChild(tree, kim, lee);
     setRightChild(tree, seo, cho);
 
-    printf("중위 순회 결과: ");
+    printf("중위 순회 결과 : ");
     inorderTraversal(tree, park);
     printf("\n");
 
