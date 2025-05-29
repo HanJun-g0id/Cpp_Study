@@ -38,5 +38,7 @@ int main()
     PreOrder(BT);
     cout << endl;
 
+    Destroy(BT);
+    cout << "트리 삭제" << endl;
     return 0;
 }
