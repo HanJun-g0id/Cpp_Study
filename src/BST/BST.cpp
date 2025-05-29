@@ -31,6 +31,16 @@ Nptr Create(int S[]) {
     return Root;
 }
 
+void Destroy(Nptr &T) {
+    if (T != NULL) {
+        Destroy(T->LChild);
+        Destroy(T->RChild);
+        free(T->Name);
+        free(T);
+        T = NULL;
+    }
+}
+
 void PreOrder(Nptr T) {
     if (T != NULL) {
         Visit(T->Name);
@@ -85,6 +95,7 @@ void Delete(Nptr &T, int Key) {
         }
     }
 }
+
 Nptr Search(Nptr T, int key) {
     if (T == NULL || T->Data == key)
         return T;
