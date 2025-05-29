@@ -7,6 +7,7 @@ typedef struct node {
 void Visit(char* name);
 
 Nptr Create(int S[]);
+void Destroy(Nptr &T);
 void Delete(Nptr &T, int Key);
 Nptr Insert(Nptr T, int key, const char* name);
 Nptr Search(Nptr T, int key);
