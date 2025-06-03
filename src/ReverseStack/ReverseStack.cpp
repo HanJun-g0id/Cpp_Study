@@ -17,7 +17,7 @@ void Push(Nptr* Top, int Item) {
 
 int Pop(Nptr* Top) {
     if (*Top == NULL) {
-        printf("스택이 비어있습니다.\n");
+        printf("! 스택이 비어있습니다\n");
         return -1;
     }
     else {
